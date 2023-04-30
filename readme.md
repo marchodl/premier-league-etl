@@ -28,7 +28,6 @@ All the services I am using on AWS free tier account,  the only thing I paid for
 
 1. [get airflow locally](instructions/airflow_local.md) 
 2.  [Rapid-API configuration](instructions/Rapid_API_configuration.md)
-    basic API extract for the 3 sources
 3.  AWS account
     configure my role for snowflake
     loading file into s3
