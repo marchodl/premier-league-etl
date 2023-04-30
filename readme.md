@@ -1,15 +1,12 @@
 ## Premier League ETL Pipeline
 
-In this project I will examine premier league data
-
-output is in  BI tool
+In this project I will examine premier league data extract from [rapid-API](https://rapidapi.com/hub)
+output is a reports providing insight on premierleague data
 
 ### Motivation
-Project was based on an interest in Data Engineering and the newest technologie used ( idempotence) & deploying airflow on EC2 instance.
+This project was inspired by an interest in data engineering and the latest concept used in the field, such as idempotence. It also an opportunity to develop skills and gain experience with a range of tools, such as Snowflake for creating infrastructure and deploying Airflow on an EC2 instances. The project is more complex than required, utilizing dbt, Snowflake, Airflow, Docker, AWS, and CI.
 
-It also provided a good opportunity to develop skills and experience in a range of tools ( create infrustructure in snowflake ) As such, project is more complex than required, utilising dbt, snowflake, airflow, docker and AWS, CI.
-
-### architecture 
+### Architecture 
 
 ![Image description](images/architecture_plot_initial.png)
 1. Extract data using [football API](https://rapidapi.com/api-sports/api/API-FOOTBALL)
@@ -20,9 +17,7 @@ It also provided a good opportunity to develop skills and experience in a range 
 6. Create [PowerBI](https://powerbi.microsoft.com/en-gb/) Dashboard
 7. Orchestrate with [Airflow](https://airflow.apache.org/) on [EC2](https://aws.amazon.com/ec2/)
 
-iamge2
-
-output
+## output
 image 1
 
 ### setup:
