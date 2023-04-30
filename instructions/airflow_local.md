@@ -7,6 +7,7 @@ to start your project,
 
 
 **add variable** ![variable](../images/variable_airflow.png) 
+add varilable manually in **airflow**,api_url, api_key, s3_bucket
 
 **add connections** ![connection from the UI](../images/airflow_snowfalke_conn.png)
 

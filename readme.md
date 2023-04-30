@@ -24,29 +24,27 @@ add image 1
 
 Follow below steps to setup pipeline. I've tried to explain steps where I can. 
 
-All the services I am using on AWS free tier account,  the only thing I paid for running airflow on EC2 + when storing my image on ECR ( 0.10c/ month ) or keeping your infrastrcutre for a long period of time.
+All the services I am using are on an AWS Free Tier account, and I am also utilizing Snowflake's 30-day trial period. The only expenses I incurred were for running Airflow on an EC2 t2.medium instance ($0.04 per hour) and storing my image on ECR ($0.10 per month). Additional costs may arise if you maintain your infrastructure for an extended period of time.
 
 1. [get airflow locally](instructions/airflow_local.md) 
 2.  [Rapid-API configuration](instructions/Rapid_API_configuration.md)
-3.  AWS account
-    configure my role for snowflake
-    loading file into s3
-    s3 role with the policy and trust policy
-4. CI
+3.  [set up your AWS account](/instructions/AWS_account.md)
+4.  [snowflake configuartion](/instructions/snowflake.md)
+    create all these role, storage integration, table, database, schema
+    create stage
+    storage integration
+    s3 role with the policy and trust policy, we need to be able to create stroage integration and stage so snowflake 
 5. docker
     dbt core
     built the airflow image locally
     built the image EC2
-6. snowflake 
-    create all these role, storage integration, table, database, schema
-    create stage
-    storage integration
 7. dbt
     singular test,
     I make sure I only have 20 rows also
     dbt seed for my image 
     change column name 
     extract latest value for today
+8. CI
 8. dashboard
 9. notes
 10. imorovement
@@ -56,11 +54,6 @@ All the services I am using on AWS free tier account,  the only thing I paid for
 
 I will demonstarte the concept of idempotence when running 
 
-add varilable manually in airflow
-api_url
-api_key
-s3_bucket
-s3_bucket
 
 add connection manually in airflow to connect to s3
 
