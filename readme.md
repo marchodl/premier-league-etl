@@ -1,7 +1,7 @@
 ## Premier League ETL Pipeline
 
-In this project I will date provided from [rapid-API](https://rapidapi.com/hub) for the premier league (highest level of the English football league system)
-The output will be reports that provide insights on Premier League data.
+In this project I will extract data provided from [rapid-API](https://rapidapi.com/hub) for the premier league (highest level of the English football competition).
+The goal is to generate insightful reports based on the Premier League data to better understand the dynamics of the league.
 
 ### Motivation
 This project was inspired by an interest in data engineering and the latest concept used in the field, such as idempotence. It also an opportunity to develop skills and gain experience with a range of tools, such as Snowflake for creating infrastructure and deploying Airflow on an EC2 instances. The project is more complex than required, utilizing dbt, Snowflake, Airflow, Docker, AWS, and CI.
@@ -30,23 +30,22 @@ All the services I am using are on an AWS Free Tier account, and I am also utili
 2.  [Rapid-API configuration](instructions/Rapid_API_configuration.md)
 3.  [set up your AWS account](/instructions/AWS_account.md)
 4.  [snowflake configuartion](/instructions/snowflake.md)
-5. docker
-    dbt core
-    built the airflow image locally
+5. dbt
     built the image EC2
-7. dbt
     dbt user to connect to snowflake
     singular test,
     I make sure I only have 20 rows also
     dbt seed for my image 
     change column name 
     extract latest value for today
+6. BI tool dashboard
+7. run airflow on EC2
 8. CI
-8. dashboard
 9. notes
 10. imorovement
-    I didnt create specific role in snowflake, RBAC
     the s3 steps is optional but I wanted to load data from s3 to snowflake
+    use CI
+    add more data sources for our porject
     use CD to create ressouces in snowflake
 
 I will demonstarte the concept of idempotence when running 
@@ -54,7 +53,6 @@ I will demonstarte the concept of idempotence when running
 
 add connection manually in airflow to connect to s3
 
-we are downloading 2 data sources for our porject
 
 Yellow_card link
 ranking
