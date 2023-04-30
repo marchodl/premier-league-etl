@@ -1,0 +1,1 @@
+dbt build --profiles-dir . --target dev

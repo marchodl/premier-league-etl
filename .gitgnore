@@ -1,0 +1,5 @@
+/airflow/*
+!/airflow/dags/
+!/airflow/Dockerfile
+__pycache__
+/dbt/**/*.yml
