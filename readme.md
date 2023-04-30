@@ -18,15 +18,15 @@ This project was inspired by an interest in data engineering and the latest conc
 7. Orchestrate with [Airflow](https://airflow.apache.org/) on [EC2](https://aws.amazon.com/ec2/)
 
 ## output
-image 1
+add image 1
 
 ### setup:
 
-steps for running the project:
-1 - get airflow locally 
-    cmd to run my image
-    varibale and connection created
-    test my connection to snowflake
+Follow below steps to setup pipeline. I've tried to explain steps where I can. 
+
+All the services I am using on AWS free tier account,  the only thing I paid for running airflow on EC2 + when storing my image on ECR ( 0.10c/ month ) or keeping your infrastrcutre for a long period of time.
+
+1 - [get airflow locally](instructions/airflow_local.md) 
 2 - API configuration
     basic API extract for the 3 sources
 3 - AWS account
