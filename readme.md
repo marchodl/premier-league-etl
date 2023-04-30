@@ -1,22 +1,22 @@
-
+## Premier League ETL Pipeline
 
 In this project I will examine premier league data
 
 output is in  BI tool
 
-Motivation
+### Motivation
 Project was based on an interest in Data Engineering and the newest technologie used ( idempotence) & deploying airflow on EC2 instance.
 
 It also provided a good opportunity to develop skills and experience in a range of tools ( create infrustructure in snowflake ) As such, project is more complex than required, utilising dbt, snowflake, airflow, docker and AWS, CI.
 
-architecture 
+### architecture 
 image1
 iamge2
 
 output
 image 1
 
-setup:
+### setup:
 
 steps for running the project:
 1 - get airflow locally 
