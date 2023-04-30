@@ -26,31 +26,31 @@ Follow below steps to setup pipeline. I've tried to explain steps where I can.
 
 All the services I am using on AWS free tier account,  the only thing I paid for running airflow on EC2 + when storing my image on ECR ( 0.10c/ month ) or keeping your infrastrcutre for a long period of time.
 
-1 - [get airflow locally](instructions/airflow_local.md) 
-2 - API configuration
+1. [get airflow locally](instructions/airflow_local.md) 
+2.  API configuration
     basic API extract for the 3 sources
-3 - AWS account
+3.  AWS account
     configure my role for snowflake
     loading file into s3
     s3 role with the policy and trust policy
-4 - CI
-5 - docker
+4. CI
+5. docker
     dbt core
     built the airflow image locally
     built the image EC2
-6 - snowflake 
+6. snowflake 
     create all these role, storage integration, table, database, schema
     create stage
     storage integration
-7 - dbt
+7. dbt
     singular test,
     I make sure I only have 20 rows also
     dbt seed for my image 
     change column name 
     extract latest value for today
-7 - dashboard
-8 - notes
-9 - imorovement
+8. dashboard
+9. notes
+10. imorovement
     I didnt create specific role in snowflake, RBAC
     the s3 steps is optional but I wanted to load data from s3 to snowflake
     use CD to create ressouces in snowflake
