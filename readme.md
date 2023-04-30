@@ -10,7 +10,16 @@ Project was based on an interest in Data Engineering and the newest technologie 
 It also provided a good opportunity to develop skills and experience in a range of tools ( create infrustructure in snowflake ) As such, project is more complex than required, utilising dbt, snowflake, airflow, docker and AWS, CI.
 
 ### architecture 
-image1
+
+![Image description](images/architecture_plot_initial.png)
+1. Extract data using [football API](https://rapidapi.com/api-sports/api/API-FOOTBALL)
+2. Load into [AWS S3](https://aws.amazon.com/s3/)
+3. Copy into [snowflake](https://www.snowflake.com/en/)
+4. Transform using [dbt](https://www.getdbt.com/)
+5. create [docker](https://www.docker.com/) image on [ECS](https://aws.amazon.com/ecs/)
+6. Create [PowerBI](https://powerbi.microsoft.com/en-gb/) Dashboard
+7. Orchestrate with [Airflow](https://airflow.apache.org/) on [EC2](https://aws.amazon.com/ec2/)
+
 iamge2
 
 output
