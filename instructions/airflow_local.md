@@ -10,3 +10,5 @@ add ![variable](images/variable_airflow.png) and ![Image description](images/air
 
 start the extraction in python.
 define your ![dag interval](images/dag_airflow.png)
+
+![Image description](images/architecture_plot_initial.png)
