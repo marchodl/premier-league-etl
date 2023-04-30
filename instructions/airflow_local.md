@@ -7,6 +7,7 @@ to start your project,
 
 
 **add variable** ![variable](../images/variable_airflow.png) 
+
 **add connections** ![connection from the UI](../images/airflow_snowfalke_conn.png)
 
 **start the extraction in python** define your DAG ![dag interval](../images/dag_airflow.png)
