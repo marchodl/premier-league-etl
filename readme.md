@@ -27,7 +27,7 @@ Follow below steps to setup pipeline. I've tried to explain steps where I can.
 All the services I am using on AWS free tier account,  the only thing I paid for running airflow on EC2 + when storing my image on ECR ( 0.10c/ month ) or keeping your infrastrcutre for a long period of time.
 
 1. [get airflow locally](instructions/airflow_local.md) 
-2.  API configuration
+2.  [Rapid-API configuration](instructions/Rapid_API_configuration.md)
     basic API extract for the 3 sources
 3.  AWS account
     configure my role for snowflake

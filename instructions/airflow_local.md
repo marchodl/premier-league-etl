@@ -6,7 +6,7 @@ to start your project,
 `docker run -d --name my_airflow_container my-airflow:latest`
 
 
-add ![variable](../images/variable_airflow.png) and ![connection from the UI](../images/airflow_snowfalke_conn.png)
+add variable ![variable](../images/variable_airflow.png) and connections ![connection from the UI](../images/airflow_snowfalke_conn.png)
 
 start the extraction in python.
-define your ![dag interval](../images/dag_airflow.png)
+define your DAG ![dag interval](../images/dag_airflow.png)
