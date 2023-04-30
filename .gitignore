@@ -3,3 +3,4 @@
 !/airflow/Dockerfile
 __pycache__
 /dbt/**/*.yml
+*.log

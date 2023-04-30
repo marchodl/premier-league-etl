@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: premier_league
-    database: football_db
-    schema: public
-    tables:
-      - name: ranking
-      - name: yellow_cards
