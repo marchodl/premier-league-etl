@@ -30,15 +30,12 @@ All the services I am using are on an AWS Free Tier account, and I am also utili
 2.  [Rapid-API configuration](instructions/Rapid_API_configuration.md)
 3.  [set up your AWS account](/instructions/AWS_account.md)
 4.  [snowflake configuartion](/instructions/snowflake.md)
-    create all these role, storage integration, table, database, schema
-    create stage
-    storage integration
-    s3 role with the policy and trust policy, we need to be able to create stroage integration and stage so snowflake 
 5. docker
     dbt core
     built the airflow image locally
     built the image EC2
 7. dbt
+    dbt user to connect to snowflake
     singular test,
     I make sure I only have 20 rows also
     dbt seed for my image 

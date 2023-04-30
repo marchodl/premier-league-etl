@@ -29,4 +29,4 @@ CREATE STAGE my_schema.my_stage
 URL = 's3://your-bucket-name/'
 STORAGE_INTEGRATION = s3_integration;
 ```
-update trust policy in your role to grant a Snowflake role access to the S3 bucket.
+update trust policy in your role to grant a ![Snowflake role access to the S3 bucket](../images/trusted_policies.png)
