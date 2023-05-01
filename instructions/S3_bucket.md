@@ -1,0 +1,2 @@
+1. **Create an S3 bucket**: Set up an S3 bucket to store data from the API. We will store the data in CSV format.
+2. **Create an Iam role** with the appropriate permission to accrss the data stored in S3 bucket.
