@@ -4,6 +4,7 @@ from function.extract_load_ranking import extract_ranking
 from function.extract_load_yellow_cards import extract_yellow_cards
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.operators.dummy_operator import DummyOperator
 from airflow.providers.snowflake.transfers.s3_to_snowflake import S3ToSnowflakeOperator
 from airflow.providers.amazon.aws.operators.ecs import EcsRunTaskOperator
 
@@ -60,6 +61,7 @@ with DAG(
         "league_id": league_id,
     }
 )
+    dummy_task = DummyOperator(task_id='dummy_task')
 
     copy_ranking_table = S3ToSnowflakeOperator(
     task_id="copy_ranking_table",
@@ -98,6 +100,6 @@ with DAG(
     
 
 
-    #[extract_ranking_task, extract_yellow_cards_task] >> [copy_ranking_table, copy_yellow_cards_table]
-    extract_ranking_task >> extract_yellow_cards_task >> [copy_ranking_table, copy_yellow_cards_table] >> dbt_sync
+    [extract_ranking_task, extract_yellow_cards_task] >> dummy_task >> [copy_ranking_table, copy_yellow_cards_table]
+    #extract_ranking_task >> extract_yellow_cards_task >> [copy_ranking_table, copy_yellow_cards_table] >> dbt_sync
     
