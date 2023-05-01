@@ -32,7 +32,7 @@ All the services I am using are on an AWS Free Tier account, and I am also utili
 4. [S3 bucket](/instructions/S3_bucket.md)
 5. [snowflake configuration](/instructions/snowflake.md)
 6. [dbt](/instructions/dbt.md)
-7. [run airflow on EC2](/instructions/airflow_ec2.md)
+7. [run airflow on EC2](/instructions/airlfow_ec2.md)
 8. BI tool dashboard
 9. CI
 10. [imorovement](/instructions/improvement.md)
