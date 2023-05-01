@@ -30,16 +30,9 @@ All the services I am using are on an AWS Free Tier account, and I am also utili
 2. [Rapid-API configuration](instructions/Rapid_API_configuration.md)
 3. [set up your AWS account](/instructions/AWS_account.md)
 4. [S3 bucket](/instructions/S3_bucket.md)
-5. [snowflake configuartion](/instructions/snowflake.md)
+5. [snowflake configuration](/instructions/snowflake.md)
 6. [dbt](/instructions/dbt.md)
 7. [run airflow on EC2](/instructions/airflow_ec2.md)
 8. BI tool dashboard
 9. CI
-10. imorovement
-    the s3 steps is optional but I wanted to load data from s3 to snowflake
-    use CI
-    add more data sources for our porject
-    use CD to create ressouces in snowflake
-
-I will demonstarte the concept of idempotence when running 
-
+10. [imorovement](/instructions/improvement.md)

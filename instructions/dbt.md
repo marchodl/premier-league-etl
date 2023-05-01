@@ -7,7 +7,7 @@ We don't actually require any real transformation on our data; this is only for 
 
 ### Setup
 
-1. create a dbt user in snowflake ![user to connect to snowflake](../images/dbt_user.png)
+1. Create a dbt user in snowflake ![user to connect to snowflake](../images/dbt_user.png)
 2. Initialize a dbt repository: Run `dbt init` to create a new dbt repository. Enter your database details and your dbt role.
 3. Create sources.yml to define your data sources. ![source.yml](../images/dbt_sources.png)
 4. I am adding a basic singular test to check I will have erroneous data in my dashboard
