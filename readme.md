@@ -18,7 +18,7 @@ This project was inspired by an interest in data engineering and the latest conc
 7. Orchestrate with [Airflow](https://airflow.apache.org/) on [EC2](https://aws.amazon.com/ec2/)
 
 ## output
-add image 1
+![Final dashboard](images/output.png)
 
 ### setup:
 
@@ -33,6 +33,6 @@ All the services I am using are on an AWS Free Tier account, and I am also utili
 5. [Snowflake configuration](/instructions/snowflake.md)
 6. [Dbt](/instructions/dbt.md)
 7. [Run airflow on EC2](/instructions/airlfow_ec2.md)
-8. BI tool dashboard
+8. [BI tool dashboard](/instructions/BI_tool_dashboard.md)
 9. CI
 10. [Improvements](/instructions/improvement.md)
